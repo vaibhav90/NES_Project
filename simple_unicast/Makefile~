@@ -1,0 +1,4 @@
+CONTIKI=/home/vaibhav/test/contiki/
+all:unicast_receiver example-unicast
+UIP_CONF_IPV6=1
+include $(CONTIKI)/Makefile.include

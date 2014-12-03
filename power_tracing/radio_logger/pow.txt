@@ -1,0 +1,49 @@
+  CC        transmitter1.c
+  CC        /home/vaibhav/test/contiki//platform/sky/./contiki-sky-main.c
+  LD        transmitter1.sky
+msp430-objcopy transmitter1.sky -O ihex transmitter1.ihex
+make IHEXFILE=transmitter1.ihex sky-reset sky-upload
+make[1]: Entering directory `/home/vaibhav/test/contiki/examples/NES_Project/power_tracing/radio_logger'
+make -k -j 20 sky-reset-sequence
+make[2]: Entering directory `/home/vaibhav/test/contiki/examples/NES_Project/power_tracing/radio_logger'
+/home/vaibhav/test/contiki//tools/sky/msp430-bsl-linux --telosb -c /dev/ttyUSB0 -r
+Done
+make[2]: Leaving directory `/home/vaibhav/test/contiki/examples/NES_Project/power_tracing/radio_logger'
+make -j 20 sky-upload-sequence
+make[2]: Entering directory `/home/vaibhav/test/contiki/examples/NES_Project/power_tracing/radio_logger'
++++++ Erasing /dev/ttyUSB0
++++++ Programming /dev/ttyUSB0
++++++ Resetting /dev/ttyUSB0
+Done
+make[2]: Leaving directory `/home/vaibhav/test/contiki/examples/NES_Project/power_tracing/radio_logger'
+make[1]: Leaving directory `/home/vaibhav/test/contiki/examples/NES_Project/power_tracing/radio_logger'
+/home/vaibhav/test/contiki//tools/sky/serialdump-linux -b115200 /dev/ttyUSB0
+Rime started with address 111.47
+MAC 6f:2f:00:00:00:00:00:00 Contiki-2.6-1675-gaf5dcc6 started. Node id is not set.
+CSMA ContikiMAC, channel check rate 8 Hz, radio channel 26
+Starting 'packet stream transmission'
+ 132 P 111.47 0 5766 26928 2487 180 0 120 5766 26928 2487 180 0 120 (radio 8.15% / 8.15% tx 7.60% / 7.60% listen 0.55% / 0.55%)
+ 260 P 111.47 1 16726 48692 7530 422 0 240 10957 21764 5043 242 0 120 (radio 12.15% / 16.15% tx 11.51% / 15.41% listen 0.64% / 0.73%)
+ 388 P 111.47 2 27737 70405 12562 662 0 360 11008 21713 5032 240 0 120 (radio 13.47% / 16.11% tx 12.79% / 15.37% listen 0.67% / 0.73%)
+ 516 P 111.47 3 38721 92146 17482 904 0 480 10981 21741 4920 242 0 120 (radio 14.04% / 15.77% tx 13.35% / 15.03% listen 0.69% / 0.73%)
+ 644 P 111.47 4 49732 113860 22519 1276 0 732 11008 21714 5037 372 0 252 (radio 14.54% / 16.53% tx 13.76% / 15.39% listen 0.77% / 1.13%)
+ 772 P 111.47 5 61026 135290 27610 1566 0 902 11291 21430 5091 290 0 170 (radio 14.86% / 16.44% tx 14.06% / 15.55% listen 0.79% / 0.88%)
+ 900 P 111.47 6 72267 156771 32633 1847 0 1063 11238 21481 5023 281 0 161 (radio 15.05% / 16.21% tx 14.24% / 15.35% listen 0.80% / 0.85%)
+ 1028 P 111.47 7 83494 178268 37720 2117 0 1213 11224 21497 5087 270 0 150 (radio 15.21% / 16.37% tx 14.41% / 15.54% listen 0.80% / 0.82%)
+ 1156 P 111.47 8 94802 199636 42820 2397 0 1373 11305 21368 5100 280 0 160 (radio 15.35% / 16.46% tx 14.54% / 15.60% listen 0.81% / 0.85%)
+ 1284 P 111.47 9 105890 221272 47911 2637 0 1493 11085 21636 5091 240 0 120 (radio 15.45% / 16.29% tx 14.64% / 15.55% listen 0.80% / 0.73%)
+ 1412 P 111.47 10 116986 242900 53003 2877 0 1613 11093 21628 5092 240 0 120 (radio 15.52% / 16.29% tx 14.72% / 15.56% listen 0.79% / 0.73%)
+ 1540 P 111.47 11 128065 264544 58040 3118 0 1733 11076 21644 5037 241 0 120 (radio 15.57% / 16.13% tx 14.78% / 15.39% listen 0.79% / 0.73%)
+ 1668 P 111.47 12 139158 286174 63069 3358 0 1853 11090 21630 5029 240 0 120 (radio 15.61% / 16.10% tx 14.82% / 15.36% listen 0.78% / 0.73%)
+ 1796 P 111.47 13 150235 307821 68043 3598 0 1973 11074 21647 4974 240 0 120 (radio 15.64% / 15.93% tx 14.85% / 15.20% listen 0.78% / 0.73%)
+ 1924 P 111.47 14 161329 329451 73079 3839 0 2093 11091 21630 5036 241 0 120 (radio 15.67% / 16.12% tx 14.89% / 15.39% listen 0.78% / 0.73%)
+ 2052 P 111.47 15 172423 351081 78117 4079 0 2213 11091 21630 5038 240 0 120 (radio 15.70% / 16.13% tx 14.92% / 15.39% listen 0.77% / 0.73%)
+ 2180 P 111.47 16 183538 372690 83212 4319 0 2333 11112 21609 5095 240 0 120 (radio 15.73% / 16.30% tx 14.96% / 15.57% listen 0.77% / 0.73%)
+ 2308 P 111.47 17 194632 394320 88242 4559 0 2453 11091 21630 5030 240 0 120 (radio 15.75% / 16.10% tx 14.98% / 15.37% listen 0.77% / 0.73%)
+ 2436 P 111.47 18 205726 415950 93280 4799 0 2573 11091 21630 5038 240 0 120 (radio 15.77% / 16.13% tx 15.00% / 15.39% listen 0.77% / 0.73%)
+ 2564 P 111.47 19 216817 437583 98315 5040 0 2693 11088 21633 5035 241 0 120 (radio 15.79% / 16.12% tx 15.02% / 15.38% listen 0.77% / 0.73%)
+ 2692 P 111.47 20 227879 459245 103229 5280 0 2813 11059 21662 4914 240 0 120 (radio 15.79% / 15.75% tx 15.02% / 15.01% listen 0.76% / 0.73%)
+ 2820 P 111.47 21 239000 480848 108322 5520 0 2933 11118 21603 5093 240 0 120 (radio 15.81% / 16.29% tx 15.04% / 15.56% listen 0.76% / 0.73%)
+ 2948 P 111.47 22 250101 502471 113348 5760 0 3053 11098 21623 5026 240 0 120 (radio 15.82% / 16.09% tx 15.06% / 15.36% listen 0.76% / 0.73%)
+ 3076 P 111.47 23 261222 524074 118441 6000 0 3173 11118 21603 5093 240 0 120 (radio 15.84% / 16.29% tx 15.08% / 15.56% listen 0.76% / 0.73%)
+ 3204 P 111.47 24 272286 545734 123356 6240 0 3293 11061 21660 4915 240 0 120 (radio 15.84% / 15.75% tx 15.07% / 15.02% listen 0.76% / 0.73%)

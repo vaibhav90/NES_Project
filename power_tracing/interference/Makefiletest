@@ -1,0 +1,14 @@
+CONTIKI = /home/vaibhav/test/contiki/
+
+CONTIKI_PROJECT=interferer_example_1
+all:$(CONTIKI_PROJECT)
+
+APPS+=powertrace
+
+include $(CONTIKI)/Makefile.include
+
+
+
+
+
+

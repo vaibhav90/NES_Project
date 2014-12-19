@@ -9,7 +9,7 @@ radio_logger contains source to generate interference patterns using packet stor
 Folder interference contains source to generate interference patterns using modulated and unmodulated carriers
 
 rssi_floor contains source to run the RSSI scanner //Originally written by Carlo Alberto Boano, Copyrights maintained. 
-Results folder contains spreedsheets od all the RSSI and power readings while generating the patterns
+Results folder contains spreedsheets of all the RSSI and power readings while generating the patterns
 
 Folder my_scripts contains some python scripts to read files and plot grpahs
 

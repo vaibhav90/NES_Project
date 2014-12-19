@@ -11,7 +11,7 @@ Folder interference contains source to generate interference patterns using modu
 rssi_floor contains source to run the RSSI scanner //Originally written by Carlo Alberto Boano, Copyrights maintained. 
 Results folder contains spreedsheets of all the RSSI and power readings while generating the patterns
 
-Folder my_scripts contains some python scripts to read files and plot grpahs
+Folder my_scripts contains some python scripts to read files and plot graphs
 
 The power_trace folder contains the interference patterns code with the power monitoring functionalities inserted. 
 
